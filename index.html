@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    Hello World!
+
+    <script>
+      const arr = [
+        "Nope",
+        "Not right",
+        "Sorry, you are wrong",
+        "Noooooooooooo",
+        "Fuck you",
+        "Are you kidding me ??",
+      ];
+      const myFunction = () => {
+        const random = Math.round(Math.random() * (arr.length - 1));
+        const input = window.prompt("How are you");
+        window.alert(arr[random]);
+        myFunction();
+      };
+      document.addEventListener("DOMContentLoaded", (e) => {
+        myFunction();
+      });
+    </script>
+  </body>
+</html>
